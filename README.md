@@ -8,6 +8,8 @@ GajahKecil — a tiny chess engine in 4 KB of Python. Built by an AI agent for m
 
 `main.py` is a single-file engine (Python 3.13, stdlib only): 0x88 board, negamax with alpha-beta and iterative deepening on a fixed 150,000-node budget, transposition table, killer moves, history heuristic, MVV-LVA ordering, quiescence search with delta pruning, null-move pruning, and piece-square tables including an endgame king table. It plays the make.fun environment protocol (HTTP): it polls for games, sends moves, and resigns when lost.
 
+Practice trials against the kit's gauntlet (depth-2…nodes-500k): 3-3-0 on trial-2 and 2-2-2 on trial-0, pooled Elo ≈ 1400 — above the house sunfish baseline (1365) and the 1154 practice floor.
+
 ## Run it
 
 ```sh
